@@ -147,8 +147,9 @@ def display_data():
     for suggestion in suggestions[1:]:
         results += f"<li>{suggestion}</li>"
     results += "</ul><br><h2>Packages:</h2><ul>"
-    for package in packages:
-        results += f"<li>{package}</li>"
+    installed_software = get_installed_software()
+    for software_name, software_version in installed_software:
+        results += f"<li>{software_name}: {software_version}</li>"
     for shell in shells:
         results += f"<li>{shell}</li>"
     results += "</ul>"
