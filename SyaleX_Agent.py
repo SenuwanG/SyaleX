@@ -34,8 +34,8 @@ print("")
 
 startTime = time.time()
 
-# Replace 'your_api_key' with your actual API key
-api_key = '****************************'
+#Api Call
+api_key = input ("Enter the API key: ")
 
 import subprocess
 
